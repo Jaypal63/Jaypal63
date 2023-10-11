@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple color in border</title>
+    <style>
+        body{
+            height: 800px;
+            width: 100%;
+            margin: auto;
+            padding: auto;
+            position: relative;
+            border: 1px solid skyblue;
+        }
+        div{
+            height: 350px;
+            width: 50%;
+            position: absolute;
+            border: 10px solid black;
+            font-size: 30px;
+            top: 30%;
+            left: 30%;
+            text-align: center;
+            border-image: linear-gradient(red, yellow, green, skyblue, purple, blue) 30;
+        }
+        p{
+            height: 100px;
+            width: 20%;
+            border: 1px solid yellow;
+            margin: auto;
+            padding: 50px;
+            background-image: linear-gradient(red, yellow, green, skyblue);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        border multiple color
+        <p></p>
+    </div>
+</body>
+</html>

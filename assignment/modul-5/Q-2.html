@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-2</title>
+</head>
+<body>
+    <h1>Que:- How to embed audio and video in a webpage?</h1>
+    <ul>
+        <li>&lt;Audio&gt; &lt;video&gt; tags can be used to embed audio video on webpages.</li>
+        <li>audio and video tags have many attributes</li>
+    </ul>
+    <u>audio-video tags attributes</u>
+    <ol>
+        <li>Autoplay:- this attribute if specified the video will automaticlly begin to play back as soon as it can do so without stopping to finish loading the data</li>
+        <li>controls:- attribute is present it will allow the user to control video playbck</li>
+        <li>loop:- this attribute if specified will allow video automatically seek back to the start after reaching at the end</li>
+        <li>src:- URL of the audio and video file</li>
+    </ol>
+    <u>Audio</u>
+    <ol>
+        <li>audio embed in html, you can use to &lt;audio&gt; tags and use to src attribute </li>
+        <pre>
+            &lt;audio controls &gt;
+           &lt;source src="path of audio file"&gt;
+        &lt;/audio&gt;
+        </pre>
+    </ol>
+    <u>example:-</u>
+    <br>
+    <br>
+    <audio controls loop>
+        <source src="Audio-video/audio.mp3">
+    </audio><br>
+    <br>
+    <u>video</u>
+    <ol>
+        <li>audio embed in html, you can use to &lt;video&gt; tags and use to src attribute</li>
+        <pre>
+            &lt;video controls &gt;
+               &lt;source src="path of video file"&gt;
+            &lt;/video &gt; 
+        </pre>
+    </ol><br>
+    <u>exmple:-</u><br><br>
+    <video controls height="350px" width="500px">
+        <source src="Audio-video/video.mp4">
+    </video>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Que:- How to Apply CSS using jQuery, How to Add Class and Removes Class in jQuery, jQuery animation?</h1>
+        <u>Ans:-</u>
+    </div>
+    <div class="menu">
+        <p>In this article, we will learn to animate using jQuery addClass() and removeClass() functions.</p>
+        <p>We are going to use jQuery and jQuery UI</p>
+        <p>jQuery UI (User Interface) is free and open-source software that is built on top of the core powerful jQuery library</p>
+        <p><li>addClass() method:-</li>It is used to add specified classes to each of the targeted elements while animating all style changes</p>
+        <p><li>removeClass() method:-</li>It is used to remove the classes from the element while animating all style changes.</p>
+    </div>
+    <div class="main">
+        <div id="button">
+            <button id="btn">Click</button>
+        </div>
+        <div class="class">
+            <button id="add">AddClass</button>
+            <button id="remove">RemoveClass</button>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("p").css({"background-color" : " green" , "color" : "#fff" , "padding" : "10px"});
+            })
+            $("#add").click(function () {
+                $(".menu").addClass("add");
+            })
+            $("#remove").click(function () {
+                $(".menu").removeClass("add");
+            })
+        })
+    </script>
+</body>
+</html>

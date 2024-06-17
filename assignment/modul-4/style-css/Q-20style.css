@@ -1,0 +1,87 @@
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 200px 220px 200px 180px;
+    grid-template-columns: 230px 200px 230px 200px 200px 190px;
+}
+.item{
+    border: 3px solid black;
+}
+.i-1{
+    grid-area: 1/ 1/ 2/ 5;
+    background-image: url(https://w0.peakpx.com/wallpaper/216/42/HD-wallpaper-man-surfing-on-ocean-waves-during-daytime.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-2{
+    grid-area: 1/ 5/ 2/ 7;
+    background-image: url(https://urban.sas.upenn.edu/sites/default/files/unnamed_0.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-3{
+    grid-area: 2/ 1/ 3/ 2;
+    background-image: url(https://media.istockphoto.com/id/1315856341/photo/young-woman-meditating-outdoors-at-park.jpg?s=1024x1024&w=is&k=20&c=6sF4-2AMRbexbQM6xg8H3StWwa6WtVUGWhsrp18KN4M=);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-4{
+    grid-area: 2/ 2/ 3/ 6;
+    background-image: url(https://i0.wp.com/pediaa.com/wp-content/uploads/2018/04/How-are-Green-Algae-Different-from-Cyanobacteria_Figure-1.jpg?resize=550%2C400);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-5{
+    grid-area: 2/ 6/ 3/ 7;
+    background-image: url(https://www.refuelagency.com/wp-content/uploads/2021/02/patrick-buck-iPpy3Mupk8k-unsplash-scaled-e1612557642131-1536x1227.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-6{
+    grid-area: 3/ 1/ 4/ 4;
+    background-image: url(https://www.bing.com/th?id=OIP.NGYr0CGM-3yF1aiA2PUMYgHaE7&w=151&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-7{
+    grid-area: 3/ 4/ 4/ 7;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyfRoQmQBtSE7l09W1SNRwFOGMFs3aKDsCop-WUl3UAivR74HOqD0Gj9uvhjhMYRnqBpY&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-8{
+    grid-area: 4/ 1/ 5/ 3; 
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5Ex436K0FzjDuF5si-mAyUnIVuXB4iv8hbeXDe6zeh4ze6uhU3NoruGW7fd542lnLig&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.i-9{
+    grid-area: 4/ 3/ 5/ 5;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjUfTYhg6roKk8d1mbXtd0CTZF6hbiDiZZUs7DaGblPVus0KBhWMLz1C9gjqQjPQ7YHfE&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.i-10{
+    grid-area: 4/ 5/ 5/ 7;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpJTWe4takdPPVTPM7m1HGwdXONrEZdy2_rkpF8L2svDq7h4QzTuhUVgTCYL6TaUue6Y&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.i-11{
+    grid-area: 1/ 7/ 5/ 8;
+    background-color: black;
+    padding-right: 20px;
+}
+.jay{
+    color: antiquewhite;
+    text-align: right;
+}
+h3{
+    text-align: right;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}

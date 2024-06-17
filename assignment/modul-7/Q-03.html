@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-3</title>
+    <style>
+        #main,
+        #down {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #down {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Que:- How to create slider with animation?</h1>
+        <u>Ans:-</u>
+    </div>
+    <div>
+        <p>If the elements have been slid up, slideToggle() will slide them down.
+            $(selector).slideToggle(speed,callback);</p>
+        <p>The optional speed parameter can take the following values: "slow", "fast", milliseconds. The optional
+            callback parameter is a function to be executed after the sliding completes.</p>
+        <u>jQuery slide Methods</u>
+        <p>With jQuery you can create a sliding effect on elements.</p>
+        <p>
+            <li>slideDown()</li>
+            <li>slideUp()</li>
+            <li>slideToggle()
+            </li>
+        </p>
+    </div>
+    <div id="main">Click to slide down</div>
+    <div id="down">Hello frends</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#main").click(function () {
+                $("#down").slideDown("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>

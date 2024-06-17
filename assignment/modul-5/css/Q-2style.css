@@ -1,0 +1,54 @@
+.manu {
+    height: 500px;
+    width: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    font-size: 26px;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(9, 249, 169);
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(252, 141, 228);
+}
+
+.contents {
+    display: flex;
+}
+
+.side {
+    height: 300px;
+    width: 75%;
+}
+
+section {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 153, 254, 0.717);
+}
+
+article {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(239, 92, 102, 0.694);
+}
+
+aside {
+    height: 300px;
+    width: 25%;
+    background-color: moccasin;
+}
+
+footer {
+    height: 110px;
+    width: 100%;
+    background-color: rgba(239, 0, 223, 0.708);
+}

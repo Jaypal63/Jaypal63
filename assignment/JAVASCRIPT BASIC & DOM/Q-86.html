@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-86</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            height: 80vh;
+            width: 100%;
+            padding: 0%;
+            margin: 0%;
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            height: 85vh;
+            width: 35%;
+            border: 1px solid;
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        .box {
+            width: 50%;
+            text-align: left;
+            margin-left: 10%;
+        }
+
+        p {
+            font-size: 25px;
+            padding: 0%;
+            margin-top: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .calc {
+            display: flex;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            width: 120px;
+        }
+
+        .operation {
+            padding: 11px;
+        }
+
+        h2 {
+            position: absolute;
+            top: 0;
+            left: 41%;
+        }
+
+        #total,
+        #percent,
+        #Remarks {
+            color: red;
+        }
+
+        label {
+            line-height: 21px;
+        }
+        .total1{
+            margin-top: 20%;
+        }
+        hr{
+            color: darkslategray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Q-86 Create result box</h2>
+    <section class="container">
+        <p> Mark sheet For Information technology </p>
+        <h3>Enter Marks</h3>
+        <section class="calc">
+            <section class="box b-1">
+                <label for="d-1">C language:</label><hr>
+                <label for="d-2">C++ language:</label><hr>
+                <label for="d-3">Database:</label><hr>
+                <label for="d-4">HTML:</label><hr>
+                <label for="d-5">CSS:</label><hr>
+                <label for="d-6">php:</label><hr>
+                <label for="d-7">Core Java:</label><hr>
+                <h4 class="total1">Total is:<span id="total"></span>/350</h4>
+                <h4 class="percentage">Percentage is: <span id="percent"></span> %</h4>
+                <!-- <h4>Remarks: <span id="Remarks"></span></h4> -->
+            </section>
+            <section class="box b-2"><br>
+                <input type="text" id="label-1"><br><br>
+                <input type="text" id="label-2"><br><br>
+                <input type="text" id="label-3"><br><br>
+                <input type="text" id="label-4"><br><br>
+                <input type="text" id="label-5"><br><br>
+                <input type="text" id="label-6"><br><br>
+                <input type="text" id="label-7"><br><br>
+                <button onclick="percentage()">Result</button>
+            </section>
+        </section>
+    </section>
+
+    <script>
+
+        function percentage() {
+            let inp1 = parseInt(document.getElementById("label-1").value);
+            let inp2 = parseInt(document.getElementById("label-2").value);
+            let inp3 = parseInt(document.getElementById("label-3").value);
+            let inp4 = parseInt(document.getElementById("label-4").value);
+            let inp5 = parseInt(document.getElementById("label-5").value);
+            let inp6 = parseInt(document.getElementById("label-6").value);
+            let inp7 = parseInt(document.getElementById("label-7").value);
+            if (isNaN(inp1) || isNaN(inp2) || isNaN(inp3) || isNaN(inp4) || isNaN(inp5) || isNaN(inp6) || isNaN(inp7)) {
+                alert('You forget Enter valid marks any subject ');
+            }
+            else if (inp1 > 50 || inp2 > 50 || inp3 > 50 || inp4 > 50 || inp5 > 50 || inp6 > 50 || inp7 > 50) {
+                alert('Enter the valid marks of related Subject');
+            }
+            else {
+                let total = (inp1 + inp2 + inp3 + inp4 + inp5 + inp6 + inp7);
+                document.getElementById("total").innerHTML = (total);
+                let percent = (total / 350) * 100;
+                result = percent.toPrecision(4);
+                document.getElementById("percent").innerHTML = result;
+            }
+            if (isNaN(inp1) || isNaN(inp2) || isNaN(inp3) || isNaN(inp4) || isNaN(inp5) || isNaN(inp6) || isNaN(inp7)) {
+                let remarks = document.getElementById('Remarks').innerHTML = ('');
+            }
+            else if (inp1 < 18 || inp2 < 18 || inp3 < 18 || inp4 < 18 || inp5 < 18 || inp6 < 18 || inp7 < 18) {
+                let remarks = document.getElementById('Remarks').innerHTML = ('Fail');
+            }
+            else {
+                let remarks = document.getElementById('Remarks').innerHTML = ('Pass');
+            }
+        }
+    </script>
+</body>
+
+</html>

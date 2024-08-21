@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 72</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="container fs-2">
+    <h1>Write the code for adding new elements dynamically?</h1>
+    <h2>Ans:-</h2>
+
+    <div>
+        <p>&#10233 Code for adding new elements dynamically.</p>
+        <p class="text-danger">&#10233 Syntax:-</p>
+        <pre class="text-warning">
+            &lt; script &gt;|
+            var pre=document.createElement('p')
+            var node=document.createTextNode('three')
+            pre.appendChild(node)
+            var parent=document.getElementById("div")
+            parent.appendChild(pre)
+            &lt; /script &gt;
+        </pre>
+    </div>
+
+    <div id="div">
+        <p id="one">HTML</p>
+        <p id="two">CSS</p>
+    </div>
+
+    <script>
+        var pre = document.createElement('p')
+        var node = document.createTextNode('JavaScipt')
+        pre.appendChild(node)
+        var parent = document.getElementById("div")
+        parent.appendChild(pre)
+    </script>
+</body>
+
+</html>

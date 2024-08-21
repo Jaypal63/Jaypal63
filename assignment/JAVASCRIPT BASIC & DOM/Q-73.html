@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que 73</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="container mt-5">
+    <h1> Q-73 What is difference between ViewState and SessionState?</h1>
+    <h2>Ans:-</h2>
+
+    <table border="1px" class="table" height="400px">
+        <thead>
+            <th>ViewState</th>
+            <th>SessionState</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maintained at page level only.</td>
+                <td>Maintained at session level.</td>
+            </tr>
+            <tr>
+                <td>View state can only be visible from a single page and not multiple pages.</td>
+                <td>Session state value availability is across all pages available in a user session.</td>
+            </tr>
+            <tr>
+                <td>Information is stored on the client,s end only.</td>
+                <td>Information is stored on the server.</td>
+            </tr>
+            <tr>
+                <td>Use to allow the persistence of page-instance-specific data.</td>
+                <td>Use for the persistence of user-specific data on the server's end.</td>
+            </tr>
+            <tr>
+                <td>ViewState values are lost/cleared when new page is loaded.</td>
+                <td>SessionState can be cleared by programmer or user or in case of timeouts.</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

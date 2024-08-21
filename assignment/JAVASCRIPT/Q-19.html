@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-19</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-size: 18px;
+        }
+
+        .ans {
+            width: 50%;
+            margin: auto;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        button {
+            padding: 15px;
+            font-size: larger;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3 class="container"><u>Create basic math operation in JS</u></h3>
+    <div class="ans container">
+        <h3>Maths Operations</h3>
+        <label for="num1">Enter 1st Number : </label>
+        <input type="text" id="inp1" name="num1"> <br><br>
+        <label for="num2">Enter 2nd Number : </label>
+        <input type="text" id="inp2" name="num1"> <br><br>
+        <label for="ans" id="ans"></label> <br><br>
+        <button type="button" id="btn" onclick="add()">+</button>
+        <button type="button" id="btn" onclick="sub()">-</button>
+        <button type="button" id="btn" onclick="mul()">*</button>
+        <button type="button" id="btn" onclick="div()">/</button>
+        <button type="button" id="btn" onclick="mod()">%</button>
+    </div>
+    <script>
+        let a = document.getElementById("inp1");
+        let b = document.getElementById("inp2");
+        let c = document.getElementById('ans');
+        let d = document.getElementById('btn');
+        function add() {
+            c.value = parseInt(inp1.value) + parseInt(inp2.value);
+            document.getElementById("ans").innerHTML = "Answer is : " + c.value;
+            c.style.color = "blue";
+        }
+        function sub() {
+            c.value = parseInt(inp1.value) - parseInt(inp2.value);
+            document.getElementById("ans").innerHTML = "Answer is : " + c.value;
+        }
+        function mul() {
+            c.value = parseInt(inp1.value) * parseInt(inp2.value);
+            document.getElementById("ans").innerHTML = "Answer is : " + c.value;
+        }
+        function div() {
+            c.value = parseInt(inp1.value) / parseInt(inp2.value);
+            document.getElementById("ans").innerHTML = "Answer is : " + c.value;
+        }
+        function mod() {
+            c.value = parseInt(inp1.value) % parseInt(inp2.value);
+            document.getElementById("ans").innerHTML = "Answer is : " + c.value;
+        }
+    </script>
+
+</body>
+
+</html>
